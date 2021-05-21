@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ricebox Studio // Tate Exchange: Betautopia</title>
+    <meta name="author" content="Ricebox Studio">
+    <meta name="description" content="Design studio changing the world, a grain of rice at a time!">
+    <meta name="keyword" content="design studio, bame, ricebox studio, activism, social design, creative technology, visual communication, user centred design, education">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="prepared/General/favicon.png">
+    
+    <!--for p5.js-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="drawingCanvas.js"></script>
+    
+    <!--for the loading screen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <a href="index.html">
+        <header id="title">
+            <div id="ourLogo">
+                <h1>RiCEBOX STUDiO</h1>
+                <img src="prepared/General/riceboxOpened.png">
+            </div>
+            <h3>changing the world, a grain of rice at a time</h3>
+        </header>
+    </a>
+    
+    <!-- INSTRUCTION -->
+    
+    <div id="instruction">
+        <div id="reset-dot2" onClick="window.location.reload();">
+            <img id="reset" src="prepared/Nav/reset.png">
+            <img class="dot2" src="prepared/Nav/pink.png">
+        </div>
+    </div> <!--instruction-->
+    
+    <div id="justToCenter">
+        
+    <main id="mainContent">
+        
+        <div id="gallery-info">
+            
+            <div id="gallery">
+                <img class="photo" src=prepared/Work/beta_placard.jpg><br>
+                <img class="photo" src=prepared/Work/beta_superheroes.jpg><br>
+                <img class="photo" src=prepared/Work/beta_debates.jpg><br>
+                <img class="photo" src="prepared/Work/beta_heart.jpg"><br/>
+                <h4>Several photos taken at the venue during the event (above)</h4><br>
+                <h4>Several pages from our documentation book (below)</h4><br>
+                <img class="photo" src=prepared/Work/beta_cover.jpg><br>
+                <img class="photo" src=prepared/Work/beta_superhero.jpg><br>
+                <img class="photo" src="prepared/Work/beta_invent.jpg"><br>
+                <img class="photo" src="prepared/Work/beta_protest.jpg">
+            </div> <!--gallery-->
+
+            <div id="info">
+                <h2 class="subheader">Tate Exchange: Beta Utopia</h2>
+                <p>
+                    Beta Utopia was a week long event exploring social mobility and citizen-centred innovation at Tate Exchange. We primarily collaborated with <a href="https://home.crin.org/" target="_blank" class="linked">Child Rights International Network (CRIN)</a>, along with UAL students, staffs and alumni in the <a href="http://digitalmakercollective.org/" target="_blank" class="linked">Digital Maker Collective</a> to organise various workshops and debates targeted around tackling environmental and societal issues. Our project title was primarily inspired from envisioning a utopian future, free of current global issues, through creative practices.<br><br>We hosted three workshops - The Superhero workshop gave participants the power to combat climate change by creating their own superheroes. Initially inspired from the (then upcoming) Fridays For Future and Youth Climate Strike, visitors designed their own banners to raise their voice against various global issues in the Protest Banner Workshop. Lastly, in the <a href="littleinventors.org" target="_blank" class="linked">Little Inventors</a> workshop, we collaborated with Dominic Wilcox's team to turn children's wonderful imaginations to invention ideas.<br><br>In order to document our process, we also designed a publication.
+                </p><br/>
+                <p>Roles:<br>
+                Event Logistics<br>
+                Workshop Design<br>
+                Illustration<br>
+                Book Design</p>
+
+            </div> <!--info--> 
+            
+        </div> <!--gallery-info-->
+
+    </main> <!--mainContent-->
+        
+    </div> <!--justToCenter-->
+        
+    <!-- Navigation -->
+    
+    <nav id="menu">
+        
+        <a href="index.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/home.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/yellow.png">
+                <h3 class="navText">Home</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="work.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/work.png" onmouseover="dotTextReveal()">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/green.png" style="visibility:visible;">
+                <h3 class="navText">Work</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="about.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/about.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/orange.png">
+                <h3 class="navText">About</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="contact.html">
+        <div class="icon-dot">
+            <img class="icon" style="height:1.4em;" src="prepared/Nav/contact.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/pink.png">
+                <h3 class="navText">Contact</h3>
+            </div>
+        </div>
+        </a>
+        
+    </nav> <!--menu-->
+    
+    <a href="newsletter.html" target="_blank">
+        <img id="rainbow" src="prepared/Nav/newsletter.png">
+    </a>
+    
+</body>
+    
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ricebox Studio // Basics of Machine Learning</title>
+    <meta name="author" content="Ricebox Studio">
+    <meta name="description" content="Design studio changing the world, a grain of rice at a time!">
+    <meta name="keyword" content="design studio, bame, ricebox studio, activism, social design, creative technology, visual communication, user centred design, education">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="prepared/General/favicon.png">
+    
+    <!--for p5.js-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="drawingCanvas.js"></script>
+    
+    <!--for the loading screen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <a href="index.html">
+        <header id="title">
+            <div id="ourLogo">
+                <h1>RiCEBOX STUDiO</h1>
+                <img src="prepared/General/riceboxOpened.png">
+            </div>
+            <h3>changing the world, a grain of rice at a time</h3>
+        </header>
+    </a>
+    
+    <!-- NAVIGATION -->
+    
+    <nav id="menu">
+        
+        <a href="index.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/home.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/yellow.png">
+                <h3 class="navText">Home</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="work.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/work.png" onmouseover="dotTextReveal()">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/green.png" style="visibility:visible;">
+                <h3 class="navText">Work</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="about.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/about.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/orange.png">
+                <h3 class="navText">About</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="contact.html">
+        <div class="icon-dot">
+            <img class="icon" style="height:1.4em;" src="prepared/Nav/contact.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/pink.png">
+                <h3 class="navText">Contact</h3>
+            </div>
+        </div>
+        </a>
+        
+    </nav> <!--menu-->
+    
+    <!-- INSTRUCTION -->
+    
+    <div id="instruction">
+        <div id="reset-dot2" onClick="window.location.reload();">
+            <img id="reset" src="prepared/Nav/reset.png">
+            <img class="dot2" src="prepared/Nav/pink.png">
+        </div>
+    </div> <!--instruction-->
+    
+    <div id="justToCenter">
+        
+    <main id="mainContent">
+        
+        <div id="gallery-info">  
+        
+            <div id="gallery">
+                <div class="wrapper">
+                    <iframe class="video" src="https://player.vimeo.com/video/405461443" width="100%" height="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe><br>
+                </div> <!--wrapper--><br>
+                <h4>Documentation video of the workshop (above)</h4><br>
+                <h4>Screenshot of the Modual TV webpage (below)</h4><br>
+                <img class="photo" src="prepared/Work/modce_tv1.png">
+                <img class="photo" src="prepared/Work/modce_tv2.png">
+                <img class="photo" src="prepared/Work/modce_tv3.png">
+            </div> <!--gallery-->
+
+            <div id="info">
+                <h2 class="subheader">Modual: Climate Emergency</h2>
+                <p>
+                    Modual is the University of the Arts London’s digital collaborative workshop led by <a href="https://freddeak.in/" target="_blank" class="linked">Fred Deakin</a> and produced by Molly Gavriel. Modual: Climate Emergency has been developed in collaboration with <a href="https://www.snootie.club/" target="_blank" class="linked">Snootie Studios</a> and Rice Box Studio. The workshop is a cross-disciplinary collaborative space that enables students to create projects for positive social change.<br><br>Modual: Climate Emergency was an opportunity for students to design a response to the climate emergency within two weeks. For this workshop, we also partnered with <a href="https://extinctionrebellion.uk/" target="_blank" class="linked">Extinction Rebellion</a>, <a href="https://www.ellenmacarthurfoundation.org/circular-economy/what-is-the-circular-economy?gclid=CjwKCAjwmrn5BRB2EiwAZgL9os_GONYO-w1ytN2QZDYDVzGdkXN9-JOabAG1q3euw1ExXObLRIvRzRoCPdIQAvD_BwE" target="_blank" class="linked">The Ellen MacArthur Foundation</a> and <a href="https://thomasmatthews.com/" target="_blank" class="linked">Thomas Matthews Design</a> to provide expertise and mentoring for the participants throughout the workshop.<br><br>This workshop was run entirely digitally and enabled us to broadcast it online to an external audience through Modual TV.<br><br>This allowed the external audience to watch the process of the projects, participate in the exercises through worksheets, listen to talks and take part in the Q&A sessions with industry experts. The aim was to remove barriers to arts and design education and to connect the student community to a wider professional and industry audience through online collaboration.<br><br>Modual TV was curated and managed by Ricebox Studio.
+                </p><br>
+                <p>Visit these links to check out Modual's recent activities:</p>
+                <p><a href="https://www.youtube.com/channel/UC08c8K5-Iw4vIK9Mk-Te5ew" target="_blank" class="linked">Youtube: Modual TV</a></p>
+                <p><a href="https://www.instagram.com/modual_workshop/" target="_blank" class="linked">Instagram: @modual_workshop</a></p>
+                <p><a href="https://twitter.com/modualworkshop" target="_blank" class="linked">Twitter: @modualworkshop</a></p><br>
+                <p>Roles:</p>
+                <p>Broadcast Curation and Management</p>
+            </div> <!--info-->   
+
+        </div> <!--gallery-info-->
+
+    </main> <!--mainContent-->
+        
+    </div> <!--justToCenter-->
+    
+    <a href="newsletter.html" target="_blank">
+        <img id="rainbow" src="prepared/Nav/newsletter.png">
+    </a>
+    
+</body>
+    
+<script src="script.js"></script>
+
+</html>

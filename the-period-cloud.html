@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ricebox Studio // Period Cloud</title>
+    <meta name="author" content="Ricebox Studio">
+    <meta name="description" content="Design studio changing the world, a grain of rice at a time!">
+    <meta name="keyword" content="design studio, bame, ricebox studio, activism, social design, creative technology, visual communication, user centred design, education">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="prepared/General/favicon.png">
+    
+    <!--for p5.js-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="drawingCanvas.js"></script>
+    
+    <!--for the loading screen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <a href="index.html">
+        <header id="title">
+            <div id="ourLogo">
+                <h1>RiCEBOX STUDiO</h1>
+                <img src="prepared/General/riceboxOpened.png">
+            </div>
+            <h3>changing the world, a grain of rice at a time</h3>
+        </header>
+    </a>
+    
+    <!-- NAVIGATION -->
+    
+    <nav id="menu">
+        
+        <a href="index.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/home.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/yellow.png">
+                <h3 class="navText">Home</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="work.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/work.png" onmouseover="dotTextReveal()">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/green.png" style="visibility:visible;">
+                <h3 class="navText">Work</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="about.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/about.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/orange.png">
+                <h3 class="navText">About</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="contact.html">
+        <div class="icon-dot">
+            <img class="icon" style="height:1.4em;" src="prepared/Nav/contact.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/pink.png">
+                <h3 class="navText">Contact</h3>
+            </div>
+        </div>
+        </a>
+        
+    </nav> <!--menu-->
+    
+    <!-- INSTRUCTION -->
+    
+    <div id="instruction">
+        <div id="reset-dot2" onClick="window.location.reload();">
+            <img id="reset" src="prepared/Nav/reset.png">
+            <img class="dot2" src="prepared/Nav/pink.png">
+        </div>
+    </div> <!--instruction-->
+    
+    <div id="justToCenter">
+        
+    <main id="mainContent">
+        
+        <div id="gallery-info">  
+        
+            <div id="gallery">
+
+                <video class="videoFile" controls>
+                    <source src="prepared/Work/cloud_demo.mp4" type="video/mp4">
+                </video><br>
+                <img class="photo" src="prepared/Work/cloud_receipt.jpg"><br>
+                <h4>Documentation video of the workshop and print outs (above)</h4><br>
+
+                <h4>Some photos of The Period Cloud installation taken during the Tate Exchange: Uni2Unicorns event (below)</h4><br>
+                <img class="photo" src="prepared/Work/cloud_preview.jpg"><br>
+                <img class="photo" src="prepared/Work/cloud_front2.jpg"><br>
+                <img class="photo" src="prepared/Work/cloud_full1.jpg"><br>
+                <img class="photo" src="prepared/Work/cloud_full2.jpg"><br><br>
+                <h4>Below are some process photos of building the piece (below)</h4><br>
+                <img class="photo" src="prepared/Work/cloud_making1.jpg"><br>
+                <img class="photo" src="prepared/Work/cloud_making2.png"><br>
+                <img class="photo" src="prepared/Work/cloud_making3.jpg"><br>
+                <img class="photo" src="prepared/Work/cloud_making4.jpg"><br>
+                <img class="photo" src="prepared/Work/cloud_making5.jpg"><br>
+
+            </div>
+
+            <div id="info">
+
+                <h2 class="subheader">The Period Cloud</h2>
+
+                <p>
+                    Period Cloud, an interactive printing machine providing factual information on menstrual health and period poverty, crowdsourced stories about anything period-related, and positive stories of menstruation across cultures and religions.<br><br>The user simply presses a button and learns something new about periods. Our aim is to encourage discussion around periods and to open up the conversation as much as possible. The receipt acts as a springboard for dialogue, or simply for the user to reflect on the content. This was a way for us to explore alternative and creative ways of delivering knowledge or engaging with our audience. All content were extracts from our upcoming book.<br><br>The Period Cloud was showcased at Tate Exchange, Tate Modern during International Women’s Day 2020.
+                </p><br>
+
+                <p>Process:</p>
+                <p>
+                    As we were writing our book, we wanted to explore alternative ways of sharing knowledge and engaging audiences in discussing important social topics in public or community spaces. Activism starts with a conversation or simply sharing your opinion.<br><br>First, we looked for a way to store the information and found a storage box shaped as a cloud. We then carefully planned out what each of the 5 buttons, screen and printer were going to do. As the storage box was made from wood we were able to  drill 5 large holes in the correct size to fix each bottom using an electric hole saw in the UAL Camberwell workshop. We then laser cut the red drops to attach onto the buttons. Using a silhouette machine we created the labels.<br><br>Tech-wise, we used the Arduino microcontroller, a thermal printer and a LCD screen. One of our team members is a Masters student in Creative Computing who has tested the tech beforehand. Once we had programmed the buttons to the printer and screen, we assembled the cloud and tidied up the wires for the final prototype.
+                </p><br>
+
+                <p>Roles:<br>
+                Content Writing<br>
+                Product Design<br>
+                3D Building<br>
+                Electrical Engineering<br>
+                Arduino Programming (with C-language)
+
+            </div>
+
+        </div> <!--gallery-info-->
+
+    </main> <!--mainContent-->
+        
+    </div> <!--justToCenter-->
+    
+    <a href="newsletter.html" target="_blank">
+        <img id="rainbow" src="prepared/Nav/newsletter.png">
+    </a>
+    
+</body>
+    
+<script src="script.js"></script>
+
+</html>

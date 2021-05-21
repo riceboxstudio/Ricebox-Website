@@ -1,0 +1,792 @@
+@charset "UTF-8";
+
+/* FONTS */
+
+@font-face {
+    font-family: 'riceboxregular';
+    src: url('ricebox-regular-webfont.woff2') format('woff2'),
+         url('ricebox-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'riceboxbold';
+    src: url('ricebox-bold-webfont.woff2') format('woff2'),
+         url('ricebox-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'loraregular';
+    src: url('lora-regular-webfont.woff2') format('woff2'),
+         url('lora-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'loraitalic';
+    src: url('lora-italic-webfont.woff2') format('woff2'),
+         url('lora-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lorabold';
+    src: url('lora-bold-webfont.woff2') format('woff2'),
+         url('lora-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lorabold-italic';
+    src: url('lora-bolditalic-webfont.woff2') format('woff2'),
+         url('lora-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+/* TEXT */
+
+h1 {
+    font-family: riceboxbold;
+    text-align: center;
+    margin: 0;
+    cursor: text;
+}
+
+h2 {
+    font-family: riceboxbold;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0;
+}
+
+.subheader {
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: riceboxbold;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+}
+
+h4 {
+    font-family: riceboxregular;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-family: loraregular;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+/*    cursor: text;*/
+}
+
+
+
+
+
+/* GENERAL */
+
+* {
+    user-select: none;
+}
+
+html {
+    --cream: #FFF6E2;
+    --yellow: #FBC540;
+    --green: #89AC33;
+    --orange: #FF6633;
+    --pink: #E2017E;
+    cursor: url('/css/cursor.png') 0 30, default;
+}
+
+body {
+    padding: 1.5em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+image {
+    user-select: none;
+}
+
+.linked {
+    font-family: lorabold;
+}
+
+.linkedText:hover {
+    color: var(--orange);
+}
+
+.linked:hover {
+    color: var(--orange);
+}
+
+#title {
+    margin-bottom: 5em;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    #mainContent {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 500px) {
+    
+    #mainContent {
+        width: calc(100% - 8em);
+    }
+    
+}
+
+@media only screen and (min-width: 1150px) {
+    
+    #mainContent {
+        width: 60em;
+    }
+    
+}
+
+.divider {
+    width: 100%;
+    margin: 5em 0;
+}
+
+@media only screen and (max-width: 550px) {
+    
+    h1 {
+        font-size: 3.5em;
+        white-space: normal;
+    }
+    
+    #ourLogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #ourLogo img {
+        height: 3.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    
+    h1 {
+        font-size: 3.5em;
+        white-space: nowrap;
+    }
+    
+    #ourLogo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: auto;
+    }
+    
+    #ourLogo img {
+        height: 3.5em;
+        margin-left: 1em;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    h1 {font-size: 5em;}
+    #ourLogo img {height: 5em;}
+}
+
+
+/* LOADING SCREEN */
+
+#loadingScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+}
+
+#launchVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#launchVideo video {
+    width: 6em;
+}
+
+#launchVideo h6 {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+
+
+
+
+/* NAVIGATION */
+
+@media only screen and (max-width: 500px) {
+    
+    #menuIndex {
+        position: fixed;
+        bottom: 1em;
+        left: 1.2em;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #title {
+        margin-bottom: 1em;
+    }
+    
+    
+    #menu {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 5em;
+    }
+    
+    .navText {
+        position: absolute;
+        top: 2.5em;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
+@media only screen and (min-width: 500px) {
+    
+    #menu, #menuIndex {
+        position: fixed;
+        bottom: 1em;
+        left: 1.2em;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navText {
+        position: absolute;
+        top: 50%;
+        left: 2.5em;
+        transform: translate(0, -50%);
+    }
+    
+}
+
+
+.icon-dot {
+    position: relative;
+}
+
+.icon {
+    height: 2em;
+    position: absolute;
+    top: 48%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+.dot-navText {
+    visibility: hidden;
+}
+
+.icon:hover + .dot-navText {
+    visibility: visible;
+}
+
+.dot {
+    width: 2.8em;
+}
+
+.navTextIndex {
+    position: absolute;
+    top: 50%;
+    left: 2.5em;
+    transform: translate(0, -50%);
+}
+
+.categoryText {
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    top: 2.2em;
+    left: 50%;
+    transform: translate(-85%, 0);
+}
+
+#instruction, #instructionIndex {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#reset-dot2 {
+    position: relative;
+    margin-left: 0.5em;
+}
+
+#reset {
+    height: 2em;
+    margin-bottom: 0.5em;
+    position: absolute;
+    top: 46%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.dot2 {
+    width: 2.8em;
+    visibility: hidden;
+}
+
+#reset:hover {
+    cursor: pointer;
+}
+
+#reset:hover + .dot2 {
+    visibility: visible;
+}
+
+#rainbow {
+    position: fixed;
+    bottom: 0;
+    right: 0.5em;
+}
+
+#rainbow:hover {
+    transform: translate(0, 0.5em);
+}
+
+@media only screen and (max-width: 500px) {
+    #rainbow {width: 9em;}
+}
+
+@media only screen and (min-width: 500px) {
+    #rainbow {width: 12em;}
+}
+
+
+
+
+
+/* HOME */
+
+@media only screen and (max-width: 500px) {
+    #instruction {display: none;}
+}
+
+.centeredContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* ABOUT */
+
+@media only screen and (max-width: 650px) {
+    
+    #members {
+        grid-template-areas: "alex fred" "jaz rebecca" "snootie weronica";
+    }
+    
+    .face {
+        width: 7em !important;
+    }
+    
+}
+
+@media only screen and (min-width: 650px) {
+    
+    #members {
+        grid-template-areas: "alex fred jaz" "rebecca snootie weronica";
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    
+    #story {
+        width: 100%;
+    }
+    
+    #profiles {
+        grid-template-areas: "safiya" "maria" "bristy" "anna";
+    }
+    
+    .profile {
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (min-width: 800px) {
+    
+    #story {
+        width: 35em;
+    }
+    
+    #profiles {
+        grid-template-areas: "safiya maria" "bristy anna";
+        grid-gap: 1em;
+    }
+    
+}
+
+@media only screen and (max-width: 920px) {
+    #keyInfo {
+        grid-template-areas: "what" "mission" "values";
+    }
+    
+    #contactInfo {
+        grid-template-areas: "insta" "email" "newsletter" "shop";
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    #keyInfo {
+        grid-template-areas: "what mission values";
+    }
+    
+    #contactInfo {
+        grid-template-areas: "insta email newsletter shop";
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    #profiles {
+        grid-template-areas: "safiya maria bristy anna";
+    }
+    
+    #members {
+        grid-template-areas: "alex fred jaz rebecca snootie veronica";
+    }
+    
+}
+
+#keyInfo, #contactInfo {
+    display: inline-grid;
+    grid-gap: 5em;
+}
+
+.what{grid-area: what;}
+.mission{grid-area: mission;}
+.values{grid-area: values;}
+
+.info {
+    width: 13em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.illus {
+    height: 5em;
+    margin-bottom: 1em;
+}
+
+#story {
+    text-align: center;
+}
+
+#story video {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .us {width: 100%;}
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .us {width: 50vw;}
+
+}
+
+.us {
+    display: block;
+    margin: 0 auto 1em auto;
+}
+
+
+
+#profiles {
+    display: grid;
+    grid-gap: 2em;
+}
+
+.profile {
+    width: 13em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5em;
+}
+
+#members .profile {
+    width: auto !important;
+    padding: 0;
+}
+
+.face {
+    width: 8em;
+    margin-bottom: 1em;
+}
+
+#features {
+    text-align: center;
+}
+
+#members {
+    display: grid;
+    grid-gap: 1em;
+}
+
+#partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-width: 6em;
+    max-height: 4em;
+    padding: 0.5em;
+}
+
+
+
+
+
+/* WORK */
+
+@media only screen and (max-width: 630px) {
+    #projects {width: 14.4em;}
+}
+
+@media only screen and (min-width: 630px) {
+    #projects {width: 27.6em;}   
+}
+
+@media only screen and (min-width: 850px) {
+    #projects {width: 40.8em;}
+}
+
+#projects > * {
+    margin: 1em 0 0 1.2em;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -1em;
+}
+
+.projectCard {
+    text-align: center;
+    width: 12em;
+    position: relative;
+}
+
+.preview {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.overlay {
+    width: 11em;
+    height: 11em;
+    background-color: var(--yellow);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5em;
+    transition: .3s ease;
+    opacity: 0;
+}
+
+.overlay h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projectCard:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+/* INDIVIDUAL WORK */
+
+@media only screen and (max-width: 1000px) {
+
+    #gallery-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #info {
+        width: 95%;
+    }
+    
+    #gallery {
+        width: 95%;
+        margin-top: 2em;
+        order: 1;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+
+    #gallery-info {
+        display: flex;
+    }
+    
+    #gallery, #info {
+        width: 50%;
+        margin: 0 1em;
+    }
+    
+}
+
+.photo {
+    width: 100%;
+}
+
+#gallery {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#info {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.blurb {
+  white-space: pre-line;
+}
+
+.wrapper {
+    position: relative;
+    padding-top: 53%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.videoFile {
+    width: 100%;
+}
+
+
+
+
+
+/* WHITEWASH CANVAS */
+
+.container {
+    cursor: url('/css/sponge.png'), grab;
+    background-image: url('/prepared/Work/whitewash_fact.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto 1em auto;
+    width: calc(100vw - 4em);
+    height: calc((100vw - 4em) * 0.65);
+
+}
+
+.canvas {
+    width: calc(100vw - 4em);
+}
+
+
+
+
+
+/* CONTACT */
+
+.contactIcon:hover {
+    transform: translate(0.3em, 0.3em);
+}
+

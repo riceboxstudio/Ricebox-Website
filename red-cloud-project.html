@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ricebox Studio // Red Cloud Project</title>
+    <meta name="author" content="Ricebox Studio">
+    <meta name="description" content="Design studio changing the world, a grain of rice at a time!">
+    <meta name="keyword" content="design studio, bame, ricebox studio, activism, social design, creative technology, visual communication, user centred design, education">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="prepared/General/favicon.png">
+    
+    <!--for p5.js-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="drawingCanvas.js"></script>
+    
+    <!--for the loading screen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <a href="index.html">
+        <header id="title">
+            <div id="ourLogo">
+                <h1>RiCEBOX STUDiO</h1>
+                <img src="prepared/General/riceboxOpened.png">
+            </div>
+            <h3>changing the world, a grain of rice at a time</h3>
+        </header>
+    </a>
+    
+    <!-- NAVIGATION -->
+    
+    <nav id="menu">
+        
+        <a href="index.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/home.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/yellow.png">
+                <h3 class="navText">Home</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="work.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/work.png" onmouseover="dotTextReveal()">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/green.png" style="visibility:visible;">
+                <h3 class="navText">Work</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="about.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/about.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/orange.png">
+                <h3 class="navText">About</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="contact.html">
+        <div class="icon-dot">
+            <img class="icon" style="height:1.4em;" src="prepared/Nav/contact.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/pink.png">
+                <h3 class="navText">Contact</h3>
+            </div>
+        </div>
+        </a>
+        
+    </nav> <!--menu-->
+    
+    <!-- INSTRUCTION -->
+    
+    <div id="instruction">
+        <div id="reset-dot2" onClick="window.location.reload();">
+            <img id="reset" src="prepared/Nav/reset.png">
+            <img class="dot2" src="prepared/Nav/pink.png">
+        </div>
+    </div> <!--instruction-->
+    
+    <div id="justToCenter">
+        
+    <main id="mainContent">
+        
+        <div id="gallery-info">  
+        
+            <div id="gallery">
+                <img class="photo" src="prepared/Work/book.png"><br>
+                <h4>From Your Big Sisters book cover</h4><br><br>
+                <img class="photo" src="prepared/Work/cloud_preview.jpg"><br>
+                <h4>The Period Cloud at Tate Exchange 2020</h4><br><br>
+                <img class="photo" src="prepared/Work/bracelet_ws1.jpg"><br>
+                <h4>At the period tracking bracelet workshop</h4>
+            </div> <!--gallery-->
+
+            <div id="info">
+                <h2 class="subheader">Red Cloud Project</h2>
+                <a href="https://rights-studio.org/" target="_blank"><h3>Fellowship at Rights Studio:<br>Child Rights International Network (CRIN)</h3></a><br>
+                <p>
+                    <a href="https://rights-studio.org/" target="_blank" class="bold-italic" class="linked">Rights Studio</a> is a design fellowship program created by Child Rights International Network where graduates explore the intersection between art and activism for 7 months focusing on human and children’s rights.<br><br>We piloted the fellowship for the first time in 2019 as BA Graphic Design alumni from Camberwell College of Arts and founded the Red Cloud Project. The campaign includes an educational book, an interactive printing machine, workshops designed to break the shame and stigma around menstruation, as well as other exciting opportunities.<br><br>Read more about each below ↓
+                </p><br>
+
+                <p>
+                    <a href="https://www.redcloudproject.co.uk/preface" target="_blank" class="linked">Book: From Your Big Sisters (pdf book version)</a>
+                </p>
+
+                <p>
+                    <a href="https://mariahtanne.wixsite.com/redcloud" target="_blank" class="linked">Website: From Your Big Sisters (web version)</a>
+                </p>
+
+                <p>
+                    <a href="the-period-cloud.html" class="linked">Interactive Box: The Period Cloud</a>
+                </p>
+
+                <p>
+                    <a href="period-tracking-bracelet-workshop.html" class="linked">Workshop: Period Tracking Bracelet Workshop at MenstrUAL Festival</a>
+                </p>
+
+                <p>
+                    <a href="https://open.spotify.com/episode/5rXMjcfK9VZkMIOMiKHxT1?go=1&utm_source=embed_v3&t=0&nd=1" target="_blank" class="linked">Podcast: Empower Period - Menstruation in the Media</a>
+                </p>
+
+                <p>
+                    <a href="https://www.youtube.com/watch?v=NvPtFxmM6es&feature=emb_title&ab_channel=IriseInternational" target="_blank" class="linked">Online Event: One World Period</a>
+                </p>
+                
+                <p>
+                    <a href="red-cloud-project-launch" target="_blank" class="linked">Red Cloud Project Launch at the Rights Studio Festival</a>
+                </p>
+
+            </div> <!--info-->
+
+
+        </div> <!--gallery-info-->
+
+    </main> <!--mainContent-->
+        
+    </div> <!--justToCenter-->
+    
+    <a href="newsletter.html" target="_blank">
+        <img id="rainbow" src="prepared/Nav/newsletter.png">
+    </a>
+    
+</body>
+    
+<script src="script.js"></script>
+
+</html>

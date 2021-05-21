@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ricebox Studio // Work</title>
+    <meta name="author" content="Ricebox Studio">
+    <meta name="description" content="Design studio changing the world, a grain of rice at a time!">
+    <meta name="keyword" content="design studio, bame, ricebox studio, activism, social design, creative technology, visual communication, user centred design, education">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="prepared/General/favicon.png">
+    
+    <!--for p5.js-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="drawingCanvas.js"></script>
+    
+    <!--for the loading screen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <a href="index.html">
+        <header id="title">
+            <div id="ourLogo">
+                <h1>RiCEBOX STUDiO</h1>
+                <img src="prepared/General/riceboxOpened.png">
+            </div>
+            <h3>changing the world, a grain of rice at a time</h3>
+        </header>
+    </a>
+    
+    <nav id="menu">
+        
+        <a href="index.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/home.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/yellow.png">
+                <h3 class="navText">Home</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="work.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/work.png" onmouseover="dotTextReveal()">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/green.png" style="visibility:visible;">
+                <h3 class="navText">Work</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="about.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/about.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/orange.png">
+                <h3 class="navText">About</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="contact.html">
+        <div class="icon-dot">
+            <img class="icon" style="height:1.4em;" src="prepared/Nav/contact.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/pink.png">
+                <h3 class="navText">Contact</h3>
+            </div>
+        </div>
+        </a>
+        
+    </nav> <!--menu-->
+    
+    <!-- RESET BUTTON -->
+    
+    <div id="instruction">
+        <div id="reset-dot2" onClick="window.location.reload();">
+            <img id="reset" src="prepared/Nav/reset.png">
+            <img class="dot2" src="prepared/Nav/pink.png">
+        </div>
+    </div> <!--instruction-->
+    
+    <div id="justToCenter">
+        
+    <main id="mainContent">
+        
+        <div id="projects">
+            
+            <!-- COPY PASTE ONE PROJECT SQUARE!!! -->
+            <!-- CHANGE A HREF="...", SRC="..." FOR PREVIEW IMAGE, AND THE SUBHEADER!!! -->
+            
+            <a href="newsletter.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/newsletterPreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">Ricebox Newsletter</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="menstruation-conversation.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/convoPreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">#Menstruation Conversation</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="techbox.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/techboxPreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">Techbox</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="dmc-immersive-web-series.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/dmcPreview.jpeg">
+                <div class="overlay">
+                    <h2 class="subheader">DMC Immersive Web Series</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="new-world-digital-campaign.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/newworldPreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">New World Digital Campaign</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="period-ar-filters.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/filterPreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">Period AR Filters</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="modual-open-futures.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/modofPreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">Modual: Open Futures</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="red-cloud-project.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/redPreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">Red Cloud Project</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="basics-of-machine-learning.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/mlPreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">Basics of Machine Learning</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="modual-climate-emergency.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/modcePreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">Modual Climate Emergency</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="how-to-build-an-arcade.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/arcadePreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">How to Build an Arcade</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="the-whitewash-project.html">    
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/whitewashPreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">The Whitewash Project</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+            <a href="tate-exchange-betautopia.html">
+            <div class="projectCard">
+                <img class="preview" src="prepared/Work/betaPreview.png">
+                <div class="overlay">
+                    <h2 class="subheader">Tate Exchange: Betautopia</h2>
+                </div>
+            </div> <!--projectCard-->
+            </a>
+            
+        </div> <!--projects-->
+
+    </main> <!--mainContent-->
+        
+    </div> <!--justToCenter-->
+        
+    <!-- Navigation -->
+    
+    <a href="newsletter.html" target="_blank">
+        <img id="rainbow" src="prepared/Nav/newsletter.png">
+    </a>
+    
+</body>
+    
+<script src="script.js"></script>
+
+</html>

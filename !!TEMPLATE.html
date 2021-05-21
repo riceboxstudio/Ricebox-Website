@@ -1,0 +1,204 @@
+<!-- TEMPLATE HTML WITH COMMENTS
+
+HOW TO ADD A NEW PROJECT
+1. Duplicate template.html
+2. Change project title
+3. Change src="..."** for photos/videos and change captions
+4. Change subheader, blurb, a href="..."* and roles
+5. Open work.html
+6. Copy-paste one project square
+7. Change a href="..."*, src="..."** for preview image, and the subheader
+
+*BEFORE CHANGING A HREF="..."
+1. You might need to create a new .html file
+
+**BEFORE CHANGING SRC="..."
+1. Add the photo or video into the prepared folder
+
+HOW TO UPLOAD TO GODADDY
+1. Go to https://uk.godaddy.com/
+2. Hover over Ricebox (top right corner) > Visit My Account
+3. Hover over Ricebox (top right corner) > My Products
+4. Scroll down to Web Hosting > Manage
+5. Click on "cPanel Admin"
+6. Click on "File Manager"
+7. Open "public_html"***
+8. Remove files you want to replace
+9. Click on "Upload" (top left)
+10. Once uploaded, Go back to folders
+
+*** Don't delete .well-known and .htaccess folder in cPanel
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- CHANGE PROJECT TITLE!!! -->
+    <title>Ricebox Studio // Project Title</title>
+    <meta name="author" content="Ricebox Studio">
+    <meta name="description" content="Design studio changing the world, a grain of rice at a time!">
+    <meta name="keyword" content="design studio, bame, ricebox studio, activism, social design, creative technology, visual communication, user centred design, education">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="prepared/General/favicon.png">
+    
+    <!--for p5.js-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="drawingCanvas.js"></script>
+    
+    <!--for the loading screen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+
+<!-- EVERYTHING BELOW THIS APPEARS ON SCREEN -->
+    
+<body>
+    
+    <!-- HEADER -->
+    
+    <a href="index.html">
+        <header id="title">
+            <div id="ourLogo">
+                <h1>RiCEBOX STUDiO</h1>
+                <img src="prepared/General/riceboxOpened.png">
+            </div>
+            <h3>changing the world, a grain of rice at a time</h3>
+        </header>
+    </a>
+    
+    <!-- NAVIGATION -->
+    
+    <nav id="menu">
+        
+        <a href="index.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/home.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/yellow.png">
+                <h3 class="navText">Home</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="work.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/work.png" onmouseover="dotTextReveal()">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/green.png" style="visibility:visible;">
+                <h3 class="navText">Work</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="about.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/about.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/orange.png">
+                <h3 class="navText">About</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="contact.html">
+        <div class="icon-dot">
+            <img class="icon" style="height:1.4em;" src="prepared/Nav/contact.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/pink.png">
+                <h3 class="navText">Contact</h3>
+            </div>
+        </div>
+        </a>
+        
+    </nav> <!--menu-->
+    
+    <!-- RESET BUTTON -->
+    
+    <div id="instruction">
+        <div id="reset-dot2" onClick="window.location.reload();">
+            <img id="reset" src="prepared/Nav/reset.png">
+            <img class="dot2" src="prepared/Nav/pink.png">
+        </div>
+    </div> <!--instruction-->
+    
+    <!-- EVERYTHING INSIDE div id="justToCenter" IS PROJECT CONTENT -->
+    
+    <div id="justToCenter">
+        
+    <main id="mainContent">
+        
+        <div id="gallery-info">  
+        
+            <!-- GALLERY SECTION WITH ALL PHOTOS/VIDEOS AND CAPTION -->
+            
+            <!-- CHANGE SRC="..." FOR PHOTOS/VIDEOS AND CAPTIONS!!! -->
+            
+            <div id="gallery">
+                
+                <!-- VIMEO -->
+                <div class="wrapper">
+                    <iframe class="video" src="https://player.vimeo.com/video/405461443" width="100%" height="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe><br>
+                </div> <!--wrapper--><br>
+                <h4>vimeo (above)</h4><br>
+                
+                <!-- MP4 AUTOPLAY + LOOP-->
+                <video class="videoFile" controls muted loop autoplay>
+                    <source src="prepared/Work/filter_iwd.mp4" type="video/mp4">
+                </video><br>
+                <h4>mp4 autoplay + loop (above)</h4><br>
+                
+                <!-- MP4 NO AUTOPLAY + NO LOOP-->
+                <video class="videoFile" controls>
+                    <source src="prepared/Work/cloud_demo.mp4" type="video/mp4">
+                </video><br>
+                <h4>mp4 no autoplay + no loop (above)</h4><br>
+                
+                <!-- PHOTO -->
+                <img class="photo" src="prepared/Work/techbox_1.png"><br>
+                <h4>photo (above)</h4><br>
+                
+            </div> <!--gallery-->
+
+            <!-- INFO SECTION WITH PROJECT INFORMATION -->
+            
+            <!-- CHANGE SUBHEADER + BLURB + a href="..." + ROLES!!! -->
+            
+            <div id="info">
+                
+                <h2 class="subheader">PROJECT TITLE HERE</h2>
+                
+                <p class="regular blurb">
+                    
+                    Blurb goes here.<br>
+                    
+                    <a href="contact.html" class="linked">This text is linked to a page in the website.</a><br>
+                    
+                    <a href="https://www.arts.ac.uk/subjects/communication-and-graphic-design/undergraduate/ba-hons-graphic-design-camberwell" target="_blank" class="linked">This text is linked to a external url.</a><br>
+                    
+                    <p>Roles:<br>
+                    What we did 1<br>
+                    What we did 2<br>
+                    
+                </p>
+            </div> <!--info-->
+
+        </div> <!--gallery-info-->
+
+    </main> <!--mainContent-->
+        
+    </div> <!--justToCenter-->
+    
+    <!-- NEWSLETTER BUTTON -->
+    
+    <a href="newsletter.html" target="_blank">
+        <img id="rainbow" src="prepared/Nav/newsletter.png">
+    </a>
+    
+</body>
+    
+<script src="script.js"></script>
+
+</html>

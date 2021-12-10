@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ricebox Studio // What's Your Story?</title>
+    <meta name="author" content="Ricebox Studio">
+    <meta name="description" content="Design studio changing the world, a grain of rice at a time!">
+    <meta name="keyword" content="design studio, bame, ricebox studio, activism, social design, creative technology, visual communication, user centred design, education">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="prepared/General/favicon.png">
+    
+    <!--for p5.js-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="drawingCanvas.js"></script>
+    
+    <!--for the loading screen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <a href="index.html">
+        <header id="title">
+            <div id="ourLogo">
+                <h1>RiCEBOX STUDiO</h1>
+                <img src="prepared/General/riceboxOpened.png">
+            </div>
+            <h3>changing the world, a grain of rice at a time</h3>
+        </header>
+    </a>
+    
+    <!-- INSTRUCTION -->
+    
+    <div id="instruction">
+        <div id="reset-dot2" onClick="window.location.reload();">
+            <img id="reset" src="prepared/Nav/reset.png">
+            <img class="dot2" src="prepared/Nav/pink.png">
+        </div>
+    </div> <!--instruction-->
+    
+    <div id="justToCenter">
+        
+    <main id="mainContent">
+        
+        <div id="gallery-info">
+            
+            <div id="gallery">
+                
+                <video class="videoFile" controls>
+                    <source src="prepared/Work/story_documentation.mp4" type="video/mp4">
+                </video><br>
+                
+                <video class="videoFile" controls>
+                    <source src="prepared/Work/story_ar1.mp4" type="video/mp4">
+                </video><br>
+                
+                <video class="videoFile" controls>
+                    <source src="prepared/Work/story_ar2.mp4" type="video/mp4">
+                </video><br>
+            
+            </div> <!--gallery-->
+
+            <div id="info">
+                <h2 class="subheader">What's Your Story?</h2>
+                <p>
+                    In the “What’s Your Story?” program, we taught the basics of AR through storytelling and racial equality. It consisted of a Briefing Talk, AR Technical Workshop, 3-day Hackathon and ended with a Live Brief with <a href="https://www.instagram.com/oursisterhood/" target="_blank" class="linked">Sisterhood</a>, where students applied their new AR techniques in real-time to bring the book <a href="https://www.oursisterhood.co.uk/find-me-among-them" target="_blank" class="linked">Find Me Among Them</a> to life! A big round of applause to Aneta Sobczuk, Marie Schaller, Siana Bezuhanova and Mezhabin Maleque who joined us for the full programme!
+                    <br><br>The “What’s Your Story?” program would not have happened without the collaboration of Sisterhood, <a href="https://artivive.com/" target="_blank" class="linked">Artivive</a> and <a href="https://www.arts-su.com/" target="_blank" class="linked">UAL Arts’ SU</a>! Thank you so much!
+                </p><br/>
+                <p>Roles:<br>
+                Event Logistics<br>
+                Workshop Design & Facilitation<br>
+                Social Media Content Design<br>
+            </div> <!--info--> 
+            
+        </div> <!--gallery-info-->
+
+    </main> <!--mainContent-->
+        
+    </div> <!--justToCenter-->
+        
+    <!-- Navigation -->
+    
+    <nav id="menu">
+        
+        <a href="index.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/home.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/yellow.png">
+                <h3 class="navText">Home</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="work.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/work.png" onmouseover="dotTextReveal()">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/green.png" style="visibility:visible;">
+                <h3 class="navText">Work</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="about.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/about.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/orange.png">
+                <h3 class="navText">About</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="contact.html">
+        <div class="icon-dot">
+            <img class="icon" style="height:1.4em;" src="prepared/Nav/contact.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/pink.png">
+                <h3 class="navText">Contact</h3>
+            </div>
+        </div>
+        </a>
+        
+    </nav> <!--menu-->
+    
+    <a href="newsletter.html" target="_blank">
+        <img id="rainbow" src="prepared/Nav/newsletter.png">
+    </a>
+    
+</body>
+    
+<script src="script.js"></script>
+
+</html>

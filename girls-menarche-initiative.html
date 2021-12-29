@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ricebox Studio // Girl's Menarche Initiative Website</title>
+    <meta name="author" content="Ricebox Studio">
+    <meta name="description" content="Design studio changing the world, a grain of rice at a time!">
+    <meta name="keyword" content="design studio, bame, ricebox studio, activism, social design, creative technology, visual communication, user centred design, education">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="prepared/General/favicon.png">
+    
+    <!--for p5.js-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="drawingCanvas.js"></script>
+    
+    <!--for the loading screen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <a href="index.html">
+        <header id="title">
+            <div id="ourLogo">
+                <h1>RiCEBOX STUDiO</h1>
+                <img src="prepared/General/riceboxOpened.png">
+            </div>
+            <h3>changing the world, a grain of rice at a time</h3>
+        </header>
+    </a>
+
+    <!-- NAVIGATION -->
+    
+    <nav id="menu">
+        
+        <a href="index.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/home.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/yellow.png">
+                <h3 class="navText">Home</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="work.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/work.png" onmouseover="dotTextReveal()">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/green.png" style="visibility:visible;">
+                <h3 class="navText">Work</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="about.html">
+        <div class="icon-dot">
+            <img class="icon" src="prepared/Nav/about.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/orange.png">
+                <h3 class="navText">About</h3>
+            </div>
+        </div>
+        </a>
+        
+        <a href="contact.html">
+        <div class="icon-dot">
+            <img class="icon" style="height:1.4em;" src="prepared/Nav/contact.png">
+            <div class="dot-navText">
+                <img class="dot" src="prepared/Nav/pink.png">
+                <h3 class="navText">Contact</h3>
+            </div>
+        </div>
+        </a>
+        
+    </nav> <!--menu-->
+    
+    <!-- INSTRUCTION -->
+    
+    <div id="instruction">
+        <div id="reset-dot2" onClick="window.location.reload();">
+            <img id="reset" src="prepared/Nav/reset.png">
+            <img class="dot2" src="prepared/Nav/pink.png">
+        </div>
+    </div> <!--instruction-->
+    
+    <div id="justToCenter">
+        
+    <main id="mainContent">
+        
+        <div id="gallery-info">  
+        
+            <div id="gallery">
+                <video class="videoFile" controls muted loop autoplay>
+                    <source src="prepared/Work/girlsmenarche_recording.mp4" type="video/mp4">
+                </video><br>
+                <h4>Recording of the website (above)</h4><br>
+                <h4>Two arcades built using the instructions on the arcade manual (below)</h4><br>
+                <img class="photo" src="prepared/Work/girlsmenarche_funding.png"><br>
+            </div> <!--gallery-->
+
+            <div id="info">
+                <h2 class="subheader">Girl's Menarche Initiative Website</h2>
+                <p>
+                    Through our connection with <a href="https://www.irise.org.uk/the-forum/" target="_blank" class="linked">Irise International</a>, we met Sharitah Nakimuli, the founder of Girl's Menarche Initiative, an organisation committed to to providing sustainable menstrual health solutions to the communities of Uganda through menstrual product distribution, advocacy and education. We assisted with the design and deployment to launch the organisation's <a href="https://girlsmenarcheiniti.wixsite.com/girlsmi" target="_blank" class="linked">webite</a>. They're a group of passionate advocates creating big changes in Uganda - please support them through reading more about their work and <a href="https://www.gofundme.com/f/the-construction-of-a-pad-sewing-centres" target="_blank" class="linked">donating to their fundraising efforts</a>.
+                </p><br>
+                <p>Roles:</p>
+                <p>Website Design</p>
+                <p>Website Deployment (using WIX)</p>
+            </div> <!--info-->
+            
+        </div> <!--gallery-info-->
+
+    </main> <!--mainContent-->
+        
+    </div> <!--justToCenter-->
+    
+    <a href="newsletter.html" target="_blank">
+        <img id="rainbow" src="prepared/Nav/newsletter.png">
+    </a>
+    
+</body>
+    
+<script src="script.js"></script>
+
+</html>
